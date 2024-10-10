@@ -7,6 +7,12 @@ export interface TeacherAttributes {
   contract: false,
   [index:string]: any,
 }
+
+export interface Director extends TeacherAttributes {
+  numberOfReport: number,
+}
+
+
 class Teacher implements TeacherAttributes {
   readonly firstName: string;
   readonly lastName: string;
